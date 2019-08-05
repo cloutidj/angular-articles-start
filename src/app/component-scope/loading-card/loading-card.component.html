@@ -1,0 +1,14 @@
+<div class="card">
+	<div class="card-header">
+		<h1>{{type}} Card</h1>
+	</div>
+	<div class="card-body">
+		Your random number is: <span id="random-val">{{loadingCardService.randomValue() | async}}</span>
+	</div>
+	<div class="card-footer">
+		<button id="load-button" class="btn btn-primary" (click)="loadingCardService.runSomething()" [disabled]="loadingCardService.isLoading">
+			<span class="spinner-border spinner-border-sm" *ngIf="loadingCardService.isLoading"></span>
+			Click Me!
+		</button>
+	</div>
+</div>

@@ -9,4 +9,5 @@ import { faNewspaper } from '@fortawesome/free-regular-svg-icons';
 export class AppComponent {
   title = 'testbed';
   faNewspaper = faNewspaper;
+  showSidebar = true;
 }
