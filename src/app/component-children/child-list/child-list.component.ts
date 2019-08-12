@@ -12,12 +12,7 @@ import { ListItemInterface } from '../models/list-item.interface';
 				(click)="toggleItem(i)"
 			>{{item.display}}</div>
 		</div>
-		`,
-	styles: [`
-		.list-group-item-action {
-			color: inherit;
-		}
-	`]
+		`
 })
 export class ChildListComponent {
 	@Input() items: ListItemInterface[];
